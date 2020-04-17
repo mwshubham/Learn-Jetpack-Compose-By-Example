@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.Composable
 import androidx.compose.Model
+import androidx.compose.getValue
+import androidx.compose.setValue
 import androidx.compose.state
 import androidx.ui.core.Modifier
 import androidx.ui.core.setContent
@@ -15,6 +17,7 @@ import androidx.ui.layout.fillMaxWidth
 import androidx.ui.layout.padding
 import androidx.ui.material.Button
 import androidx.ui.material.Divider
+import androidx.ui.material.Surface
 import androidx.ui.tooling.preview.Preview
 import androidx.ui.unit.dp
 import com.example.jetpackcompose.image.TitleComponent
@@ -136,7 +139,6 @@ fun ModelComponent(counterState: CounterState = CounterState()) {
             Text(text = "Reset", modifier = Modifier.padding(16.dp))
         }
     }
-
     // This text composable is just used to display the current value of the counter.
     Text(text = "Counter value is ${counterState.counter}", modifier = Modifier.padding(16.dp))
 }

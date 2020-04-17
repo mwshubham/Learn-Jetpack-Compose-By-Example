@@ -3,6 +3,8 @@ package com.example.jetpackcompose.material
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.Composable
+import androidx.compose.getValue
+import androidx.compose.setValue
 import androidx.compose.state
 import androidx.ui.core.Modifier
 import androidx.ui.core.setContent
@@ -97,7 +99,7 @@ fun ClickableText() {
                     onClick = onPopupDismissed
                 ) {
                     // The Button composable allows you to provide child composables that inherit
-                    // this button functiionality.
+                    // this button functionality.
                     // The Text composable is pre-defined by the Compose UI library; you can use this
                     // composable to render text on the screen
                     Text(text = "Ok")
